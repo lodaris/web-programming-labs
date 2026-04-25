@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/task-1.js",
+    "watch": "tsc --watch"
+  }
+}
