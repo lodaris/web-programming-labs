@@ -1,0 +1,53 @@
+.app {
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.header {
+  background: #2d3748;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.stats {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.main {
+  display: flex;
+  gap: 24px;
+  padding: 24px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}
+
+.content {
+  flex: 1;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.filters select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
