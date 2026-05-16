@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Layout from "./components/Layout/Layout";
 import TasksPage from "./pages/TasksPage/TasksPage";
-// import TaskDetailPage from "./pages/TaskDetailPage/TaskDetailPage";
+import TaskDetailPage from "./pages/TaskDetailPage/TaskDetailPage";
 // import NewTaskPage from "./pages/NewTaskPage/NewTaskPage";
 import { TasksProvider } from "./store/TasksContext";
 
@@ -14,7 +14,7 @@ export default function App() {
             <Route index element={<Navigate to="/tasks" replace />} />
             <Route path="tasks" element={<TasksPage />} />
             {/* <Route path="tasks/new" element={<NewTaskPage />} /> */}
-            {/* <Route path="tasks/:id" element={<TaskDetailPage />} /> */}
+            <Route path="tasks/:id" element={<TaskDetailPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
