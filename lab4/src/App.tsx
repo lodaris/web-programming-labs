@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Layout from "./components/Layout/Layout";
-// import TasksPage from "./pages/TasksPage/TasksPage";
+import TasksPage from "./pages/TasksPage/TasksPage";
 // import TaskDetailPage from "./pages/TaskDetailPage/TaskDetailPage";
 // import NewTaskPage from "./pages/NewTaskPage/NewTaskPage";
 import { TasksProvider } from "./store/TasksContext";
@@ -12,7 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Navigate to="/tasks" replace />} />
-            <Route path="tasks" element={<div>Задачі</div>} />
+            <Route path="tasks" element={<TasksPage />} />
             {/* <Route path="tasks/new" element={<NewTaskPage />} /> */}
             {/* <Route path="tasks/:id" element={<TaskDetailPage />} /> */}
           </Route>
